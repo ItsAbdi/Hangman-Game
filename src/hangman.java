@@ -2,22 +2,31 @@ import java.util.Scanner;
 
 public class hangman {
     public static void main(String[] args) {
+        System.out.println("Hello and welcome to HANGMAN");
+        System.out.println("The rules are simple");
+        System.out.println("Rule#1: Type in a word to guess ");
+        System.out.println("Rule#2: Try not to get the letters wrong for each word");
+        System.out.println("Rule#3: HAVE FUN AND GAME ON");
+
         int numberOfMisses = 0;
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 15; i++){
             hangManImage(i);
-             {
-                int tries = 0;
+        {
+            int tries = 0;
 
-                boolean iterated = false;
-                String temp = "";
-                String holder = "";
+            boolean iterated = false;
+            String temp = "";
+            String holder = "";
 
-                Scanner keyboard = new Scanner(System.in);
-                System.out.println("Enter your secret word:");
-                String word = keyboard.nextLine();
-                 
-            }
+            Scanner keyboard = new Scanner(System.in);
+            System.out.println("Enter your secret word:");
+            String word = keyboard.nextLine();
         }
+    }
+
+
+
+
 
     }
 
@@ -268,16 +277,7 @@ public class hangman {
 
     }
 
-    public static void variousWords(String[] args) {
-        int tries = 0;
 
-        boolean iterated = false;
-        String temp = "";
-        String holder = "";
-
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter your secret word:");
-        String word = keyboard.nextLine();
 
     }
-}
+
