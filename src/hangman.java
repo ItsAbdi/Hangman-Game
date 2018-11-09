@@ -1,13 +1,29 @@
+import java.util.Scanner;
+
 public class hangman {
-    public static void main(String[] args){
-        int numberOfMisses=0;
-        for( int i=0; i<15; i++) {
-           hangManImage(i);}
+    public static void main(String[] args) {
+        int numberOfMisses = 0;
+        for (int i = 0; i < 15; i++) {
+            hangManImage(i);
+             {
+                int tries = 0;
+
+                boolean iterated = false;
+                String temp = "";
+                String holder = "";
+
+                Scanner keyboard = new Scanner(System.in);
+                System.out.println("Enter your secret word:");
+                String word = keyboard.nextLine();
+                 
+            }
+        }
 
     }
+
     public static void hangManImage(int tries) {
-        String display="";
-        switch(tries){
+        String display = "";
+        switch (tries) {
 
             case 0:
             default:
@@ -129,7 +145,7 @@ public class hangman {
                 System.out.println("    |");
                 System.out.println("----|-----------------------------------");
                 System.out.println("");
-                    break;
+                break;
             case 8:
                 System.out.println("    |--------------------------|");
                 System.out.println("    |                          | ");
@@ -245,9 +261,23 @@ public class hangman {
                 System.out.println("----|-----------------------------------");
                 System.out.println("");
                 break;
+
+
         }
 
 
+    }
+
+    public static void variousWords(String[] args) {
+        int tries = 0;
+
+        boolean iterated = false;
+        String temp = "";
+        String holder = "";
+
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter your secret word:");
+        String word = keyboard.nextLine();
 
     }
 }
